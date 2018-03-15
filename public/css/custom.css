@@ -1,0 +1,222 @@
+body {
+  color: #666;
+  background-color: #fff;
+  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+nav.navbar {
+  border-bottom: 4px solid #01913F;
+}
+
+nav #navbarRegionSelect {
+  text-align-last: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #01913F;
+  font-weight: 600;
+}
+
+.info-bar {
+  margin: 0;
+  border: 0;
+  padding: 10 px 0;
+}
+
+.info-bar h1,
+.info-bar h2,
+.info-bar h3,
+.info-bar h4,
+.info-bar h5 {
+  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.info-bar h3 > span {
+  color: #01913F;
+}
+
+.info-bar p,
+.info-bar small {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.info-bar.info-bar-clean {
+  background-color: #fff;
+  border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+}
+
+.info-bar div.row > div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 !important;
+  border-right: rgba(1, 147, 64, 0.1) 1px solid;
+}
+
+header.page-header {
+  background-color: rgba(148, 149, 150, 0.05);
+  border-top: 0;
+}
+
+header.page-header h1 {
+  font-size: 2rem;
+  font-family: Ubuntu,sans-serif;
+  text-transform: uppercase;
+  color: #01913F;
+}
+
+/* Revolution Slider */
+
+.rev_slider .tp-bannertimer {
+  height: 2px !important;
+}
+
+.rev_slider .tp-caption.text_white,
+.rev_slider .tp-caption.large_bold_white {
+  color: #fff;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.rev_slider .tp-caption.medium_text {
+  font-size: 2rem;
+}
+
+.rev_slider .tp-caption.very_large_text {
+  font-size: 5rem;
+}
+
+.rev_slider .tp-caption.text_green,
+.rev_slider .tp-caption.large_bold_green {
+  color: #01913F;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.rev_slider .tp-caption.bg_green {
+  background: rgba(1, 145, 63, 0.61);
+  padding: 1rem;
+}
+
+/* Revolution Slider End*/
+
+div.heading-title {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+div.heading-title p {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+div.heading-title.heading-border-bottom {
+  border-bottom: #ccc 2px solid;
+}
+
+div.heading-border-bottom.heading-color {
+  border-bottom-color: #8ab933;
+}
+
+.branchContact .card-header {
+  background-color: #01913F;
+  padding: 0 1.25rem;
+}
+
+.branchContact .card-header .btn-link {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.branchContact h2,
+.branchContact h3,
+.branchContact h4 {
+  color: #01913F;
+}
+
+.branchContact h2 {
+  font-size: 1.2rem;
+}
+
+.branchContact h4 {
+  font-size: 1rem;
+}
+
+.branchContact i.far,
+.branchContact i.fas {
+  font-size: 2rem;
+  color: #01913F;
+}
+
+.branchContact p {
+  font-size: 1rem;
+}
+
+.branchContact dl dd {
+  margin-bottom: 1rem;
+}
+
+.branchContact dl dd dl dt {
+  font-weight: 400;
+}
+
+.branchContact dl dd dl dd {
+  margin-bottom: 0;
+}
+
+footer {
+  margin-top: 5rem;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  background: #313131;
+  background: -webkit-gradient(linear, left top, left bottom, from(#01913F), to(#0c773a));
+  background: linear-gradient(to bottom, #01913F 0%, #0c773a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$theme-first-color', endColorstr='#0c773a',GradientType=0 );
+}
+
+footer > .copyright {
+  background-color: rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  padding: 25px 0;
+  font-size: 13px;
+  display: block;
+}
+
+ul.list-icons {
+  margin-left: 1.75em;
+  position: relative;
+}
+
+ul.list-icons > li {
+  position: relative;
+}
+
+ul.list-icons > li > i {
+  position: absolute;
+  left: -1.75em;
+  width: 14px;
+  text-align: center;
+  top: 5px;
+}
+
+.mt-60 {
+  margin-top: 60px !important;
+}
+
+.fs-30 {
+  font-size: 30px !important;
+}
+
+.fw-300 {
+  font-weight: 300 !important;
+}
+
