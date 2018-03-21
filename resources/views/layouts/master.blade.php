@@ -9,6 +9,7 @@
         <meta name="description" content="@yield('description')">
         <meta name="keywords" content="@yield('keywords')">
         <meta name="author" content="Кредитный потребительский кооператив 'Касса взаимопомощи', г.Урюпинск">
+        <meta name="google-site-verification" content="-OeC-oUnlnF8vGl5yHuNLimT_p4r9KdASd45j9jx8ZI" />
         <title>КПК "Касса взаимопомощи" - @yield('title')</title>
 
 
@@ -21,6 +22,17 @@
         
         <!-- Custom CSS -->
         <link href="{{ mix('css/custom.css') }}" rel="stylesheet">
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28771902-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-28771902-1');
+        </script>
+
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

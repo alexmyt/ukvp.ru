@@ -115,13 +115,13 @@
                   <h3>Почему мы?</h3>
                   <p class="my-1"><small>почему есть смысл отдать предпочтение Кредитному потребительскому кооперативу "Касса взаимопомощи"</small></p>
                </div>
-               <p>Один мальчик принес в наш кооператив золотой, и через год получил назад целых пять. А одна девочка взяла кредит в другом кооперативе и потом все её счета арестовали приставы.</p>
+               <p>Персональный подход к <strong>заёмщикам</strong> даёт нам возможность предложить выход из ситуаций, в которых другие кредитные организации вынуждены давать отказ. Личные средства <strong>сберегателей</strong> реинвестируются в надежных заемщиков, что снижает риски и позволяет предложить более высокую процентную ставку.</p>
                <div class="row">
                   <div class="col-sm-6">
                      <ul class="list-unstyled list-icons">
                         <li><i class="fa fa-check text-success"></i>Индивидуальный подход к каждому клиенту</li>
                         <li><i class="fa fa-check text-success"></i>Выгодное размещение сбережений</li>
-                        <li><i class="fa fa-check text-success"></i>Отсутствие скрытых платежей</li>
+                        <li><i class="fa fa-check text-success"></i>Отсутствие скрытых платежей и комиссий</li>
                      </ul>
                   </div>
                   <div class="col-sm-6">
@@ -140,7 +140,7 @@
                <div class="card-header text-uppercase">Новости</div>
                <ul class="list-group list-group-flush">
                   <li class="list-group-item text-uppercase"><a href="{{route('news',2)}}">16 марта отделение в г.Урюпинске <span class="text-danger">не работает</span><br><span class="text-muted">12.03.2018</span></a></li>
-                  <li class="list-group-item text-uppercase"><a href="{{route('news',1)}}">Внеочередное собрание уполномоченных<br><span class="text-muted">27.12.2018</span></a></li>
+                  <li class="list-group-item text-uppercase"><a href="{{route('news',1)}}">Внеочередное собрание уполномоченных<br><span class="text-muted">27.12.2017</span></a></li>
                </ul>
             </div>
                
