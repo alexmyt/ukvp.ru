@@ -55,7 +55,7 @@
                   data-y="105"
                   data-frames='[{"delay":500,"speed":300,"frame":"0","from":"x:right;","to":"o:1;","ease":"Power3.easeInOut"},
                               {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'                  >
-                  <span class="fw-300">1948-1998 - Касса взаимопомощик пенсионеров и инвалидов</span>
+                  <span class="fw-300">1948-1998 - Касса взаимопомощи пенсионеров и инвалидов</span>
                </div>
 
                <div class="tp-caption customin ltl tp-resizeme very_large_text large_bold_white"
@@ -72,7 +72,7 @@
                   data-y="330"
                   data-frames='[{"delay":500,"speed":300,"frame":"0","from":"x:right;","to":"o:1;","ease":"Power3.easeInOut"},
                               {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'                  >
-                  <span class="fw-300">1998-2008 - КПК "Касса взаимопомощи"</span>
+                  <span class="fw-300">1998-2018 - КПК "Касса взаимопомощи"</span>
                </div>
                
             </li>
