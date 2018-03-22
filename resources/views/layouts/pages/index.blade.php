@@ -50,6 +50,14 @@
             <li data-transition="crossfade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
                <img src="{{asset('images/1x1.png')}}" data-lazyload="{{asset('images/1980x550/slider-balluns.jpg')}}" alt="" class="rev-slidebg" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" />
 
+               <div class="tp-caption customin ltl tp-resizeme medium_text text_white"
+                  data-x="center"
+                  data-y="105"
+                  data-frames='[{"delay":500,"speed":300,"frame":"0","from":"x:right;","to":"o:1;","ease":"Power3.easeInOut"},
+                              {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'                  >
+                  <span class="fw-300">1948-1998 - Касса взаимопомощик пенсионеров и инвалидов</span>
+               </div>
+
                <div class="tp-caption customin ltl tp-resizeme very_large_text large_bold_white"
                   data-x="center"
                   data-y="200"
@@ -64,7 +72,7 @@
                   data-y="330"
                   data-frames='[{"delay":500,"speed":300,"frame":"0","from":"x:right;","to":"o:1;","ease":"Power3.easeInOut"},
                               {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'                  >
-                  <span class="fw-300">Объединяем пайщиков с 1948 года.</span>
+                  <span class="fw-300">1998-2008 - КПК "Касса взаимопомощи"</span>
                </div>
                
             </li>
