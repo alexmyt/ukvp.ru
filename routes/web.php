@@ -39,6 +39,17 @@ Route::get('/news/{id}', function ($id) {
     return view('layouts.pages.news.'.$id);
 })->name('news');
 
-Route::get('index.html',function(){
+
+// Rederects from old-site URL's
+Route::get('/index.html',function(){
     return redirect(config('app.url'),301);
 });
+
+Route::get('/conditions_of_membership.html',function(){
+    return redirect('/shareholders',301);
+});
+
+Route::get('/generalmeeting2018-1.html',function(){
+    return redirect('/news/1',301);
+});
+
