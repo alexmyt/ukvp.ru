@@ -38,3 +38,7 @@ Route::get('/docs', function () {
 Route::get('/news/{id}', function ($id) {
     return view('layouts.pages.news.'.$id);
 })->name('news');
+
+Route::get('index.html',function(){
+    return redirect(config('app.url'),301);
+});

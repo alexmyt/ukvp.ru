@@ -57,12 +57,12 @@
                         <dt class="col-sm-2 text-center"><i class="fas fa-phone-volume"></i></dt>
                         <dd class="col-sm-10">
                               <dl class="row">
+                                 <dt class="col-6">Общий:</dt>
+                                 <dd class="col-6"><a href="tel:+78444241640" itemprop="telephone"><small>8-(84442) </small>4-16-40</a></dd>
                                  <dt class="col-6">Отдел займов:</dt>
                                  <dd class="col-6"><a href="tel:+78444242963" itemprop="telephone"><small>8-(84442) </small>4-29-63</a></dd>
-                                 <dt class="col-6">Отдел вкладов:</dt>
+                                 <dt class="col-6">Отдел сбер.взносов:</dt>
                                  <dd class="col-6"><a href="tel:+78444242920" itemprop="telephone"><small>8-(84442) </small>4-29-20</a></dd>
-                                 <dt class="col-6">Оперзал:</dt>
-                                 <dd class="col-6"><a href="tel:+78444241640" itemprop="telephone"><small>8-(84442) </small>4-16-40</a></dd>
                               </dl>
                         </dd>
                      </dl>
@@ -166,7 +166,7 @@
                         <dt class="col-sm-2 text-center"><i class="far fa-clock"></i></dt>
                         <dd class="col-sm-10">
                            <p><time itemprop="openingHours" datetime="Mo-Fr 08:30−16:00">пн-пт: 8:30-12:00; 13:00-16:00</time><br>
-                           <time itemprop="openingHours" datetime="Sa 09:00−13:00">сб: 9:00-13:00</time></p>
+                           <time itemprop="openingHours" datetime="Sa 09:00−13:00">сб: 9:00-12:30</time></p>
                         </dd>
                         
                         <dt class="col-sm-2 text-center"><i class="fas fa-phone-volume"></i></dt>
