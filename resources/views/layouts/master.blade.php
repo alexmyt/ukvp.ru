@@ -84,3 +84,4 @@
         </script>
     </body>
 </html>
+@include('cookieConsent::index')
