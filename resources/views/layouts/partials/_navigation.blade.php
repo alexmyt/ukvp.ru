@@ -1,8 +1,8 @@
  <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
    <div class="container">
-      <a class="navbar-brand" href="/">
-         <img src="{{asset('images/logo.png')}}" class="d-inline-block align-top" alt="Кредитный потребительский кооператив &quot;Касса взаимопомощи&quot;">
+      <a class="navbar-brand" href="{{env('APP_URL')}}" id="org_url">
+         <img id="header-logotype" src="{{asset('images/logo.png')}}" class="d-inline-block align-top" alt="Кредитный потребительский кооператив &quot;Касса взаимопомощи&quot;">
       </a>
    
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Включить навигацию">

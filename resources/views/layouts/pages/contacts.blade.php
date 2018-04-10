@@ -32,6 +32,8 @@
 
                {{-- Урюпинск --}}
                <div class="card" id="orgBranch0" itemscope itemtype="http://schema.org/LocalBusiness" itemref="org_name">
+                  <link itemprop="image" href="{{asset('images/logo.png')}}" />
+                  <link itemprop="url" href="{{env('APP_URL')}}" />
                   
                   <div class="card-header" id="headingBranch0">
                      <h5 class="mb-0">
@@ -58,11 +60,11 @@
                         <dd class="col-sm-10">
                               <dl class="row">
                                  <dt class="col-6">Общий:</dt>
-                                 <dd class="col-6"><a href="tel:+78444241640" itemprop="telephone"><small>8-(84442) </small>4-16-40</a></dd>
+                                 <dd class="col-6"><a href="tel:+78444241640" itemprop="telephone" content="+78444241640"><small>8-(84442) </small>4-16-40</a></dd>
                                  <dt class="col-6">Отдел займов:</dt>
-                                 <dd class="col-6"><a href="tel:+78444242963" itemprop="telephone"><small>8-(84442) </small>4-29-63</a></dd>
+                                 <dd class="col-6"><a href="tel:+78444242963" itemprop="telephone" content="+78444242963"><small>8-(84442) </small>4-29-63</a></dd>
                                  <dt class="col-6">Отдел сбер.взносов:</dt>
-                                 <dd class="col-6"><a href="tel:+78444242920" itemprop="telephone"><small>8-(84442) </small>4-29-20</a></dd>
+                                 <dd class="col-6"><a href="tel:+78444242920" itemprop="telephone" content="+78444242920"><small>8-(84442) </small>4-29-20</a></dd>
                               </dl>
                         </dd>
                      </dl>
@@ -73,6 +75,8 @@
                <div class="card" id="orgBranch1" itemscope itemtype="http://schema.org/LocalBusiness">
                   <meta itemprop="name" content="Отделение №1 р.п.Новониколаевский">
                   <meta itemprop="parentOrganization" itemref="orgBranch0">
+                  <link itemprop="image" href="{{asset('images/logo.png')}}" />
+                  <link itemprop="url" href="{{env('APP_URL')}}" />
                   
                   <div class="card-header" id="headingBranch1">
                      <h5 class="mb-0">
@@ -99,7 +103,7 @@
                         <dd class="col-sm-10">
                            <dl class="row">
                               <dt class="col-6">Общий:</dt>
-                              <dd class="col-6"><a href="tel:+78444461467" itemprop="telephone"><small>8-(84444) </small>6-14-67</a></dd>
+                              <dd class="col-6"><a href="tel:+78444461467" itemprop="telephone" content="+78444461467"><small>8-(84444) </small>6-14-67</a></dd>
                            </dl>
                         </dd>
                      </dl>
@@ -110,6 +114,8 @@
                <div class="card" id="orgBranch2" itemscope itemtype="http://schema.org/LocalBusiness">
                   <meta itemprop="name" content="Отделение №2 ст.Нехаевская">
                   <meta itemprop="parentOrganization" itemref="orgBranch0">
+                  <link itemprop="image" href="{{asset('images/logo.png')}}" />
+                  <link itemprop="url" href="{{env('APP_URL')}}" />
 
                   <div class="card-header" id="headingBranch2">
                      <h5 class="mb-0">
@@ -136,7 +142,7 @@
                         <dd class="col-sm-10">
                            <dl class="row">
                               <dt class="col-6">Общий:</dt>
-                              <dd class="col-6"><a href="tel:+78444351994" itemprop="telephone"><small>8-(84443) </small>5-19-94</a></dd>
+                              <dd class="col-6"><a href="tel:+78444351994" itemprop="telephone" content="+78444351994"><small>8-(84443) </small>5-19-94</a></dd>
                            </dl>
                         </dd>
                      </dl>
@@ -147,6 +153,8 @@
                <div class="card" id="orgBranch3" itemscope itemtype="http://schema.org/LocalBusiness">
                   <meta itemprop="name" content="Отделение №3 г.Волжский">
                   <meta itemprop="parentOrganization" itemref="orgBranch0">
+                  <link itemprop="image" href="{{asset('images/logo.png')}}" />
+                  <link itemprop="url" href="{{env('APP_URL')}}" />
 
                   <div class="card-header" id="headingBranch3">
                      <h5 class="mb-0">
@@ -173,9 +181,9 @@
                         <dd class="col-sm-10">
                            <dl class="row">
                               <dt class="col-6">Общий:</dt>
-                              <dd class="col-6"><a href="tel:+78443513333" itemprop="telephone"><small>8-(8443) </small>51-33-33</a></dd>
+                              <dd class="col-6"><a href="tel:+78443513333" itemprop="telephone" content="+78443513333"><small>8-(8443) </small>51-33-33</a></dd>
                               <dt class="col-6">&nbsp;</dt>
-                              <dd class="col-6"><a href="tel:+78443513311" itemprop="telephone"><small>8-(8443) </small>51-33-11</a></dd>
+                              <dd class="col-6"><a href="tel:+78443513311" itemprop="telephone" content="+78443513311"><small>8-(8443) </small>51-33-11</a></dd>
                            </dl>
                         </dd>
                      </dl>
@@ -186,6 +194,8 @@
                <div class="card" id="orgBranch4" itemscope itemtype="http://schema.org/LocalBusiness">
                   <meta itemprop="name" content="Отделение №4 г.Борисоглебск">
                   <meta itemprop="parentOrganization" itemref="orgBranch0">
+                  <link itemprop="image" href="{{asset('images/logo.png')}}" />
+                  <link itemprop="url" href="{{env('APP_URL')}}" />
 
                   <div class="card-header" id="headingBranch4">
                      <h5 class="mb-0">
@@ -212,7 +222,7 @@
                         <dd class="col-sm-10">
                            <dl class="row">
                               <dt class="col-6">Общий:</dt>
-                              <dd class="col-6"><a href="tel:+74735461129" itemprop="telephone"><small>8-(47354) </small>6-11-29</a></dd>
+                              <dd class="col-6"><a href="tel:+74735461129" itemprop="telephone" content="+74735461129"><small>8-(47354) </small>6-11-29</a></dd>
                            </dl>
                         </dd>
                      </dl>
@@ -223,6 +233,8 @@
                <div class="card" id="orgBranch5" itemscope itemtype="http://schema.org/LocalBusiness">
                   <meta itemprop="name" content="Отделение №5 р.п.Средняя Ахтуба">
                   <meta itemprop="parentOrganization" itemref="orgBranch0">
+                  <link itemprop="image" href="{{asset('images/logo.png')}}" />
+                  <link itemprop="url" href="{{env('APP_URL')}}" />
 
                   <div class="card-header" id="headingBranch5">
                      <h5 class="mb-0">
@@ -249,7 +261,7 @@
                         <dd class="col-sm-10">
                            <dl class="row">
                               <dt class="col-6">Общий:</dt>
-                              <dd class="col-6"><a href="tel:+78447954306" itemprop="telephone"><small>8-(84479) </small>5-43-06</a></dd>
+                              <dd class="col-6"><a href="tel:+78447954306" itemprop="telephone" content="+78447954306"><small>8-(84479) </small>5-43-06</a></dd>
                            </dl>
                         </dd>
                      </dl>
@@ -260,6 +272,8 @@
                <div class="card" id="orgBranch6" itemscope itemtype="http://schema.org/LocalBusiness">
                   <meta itemprop="name" content="Отделение №6 г.Краснослободск">
                   <meta itemprop="parentOrganization" itemref="orgBranch0">
+                  <link itemprop="image" href="{{asset('images/logo.png')}}" />
+                  <link itemprop="url" href="{{env('APP_URL')}}" />
 
                   <div class="card-header" id="headingBranch6">
                      <h5 class="mb-0">
@@ -286,7 +300,7 @@
                         <dd class="col-sm-10">
                            <dl class="row">
                               <dt class="col-6">Общий:</dt>
-                              <dd class="col-6"><a href="tel:+78447955167" itemprop="telephone"><small>8-(84479) </small>5-51-67</a></dd>
+                              <dd class="col-6"><a href="tel:+78447955167" itemprop="telephone" content="+78447955167"><small>8-(84479) </small>5-51-67</a></dd>
                            </dl>
                         </dd>
                      </dl>
