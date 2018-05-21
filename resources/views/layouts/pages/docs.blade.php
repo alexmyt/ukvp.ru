@@ -4,7 +4,6 @@ $docs=array(
    ['file' => 'cond_raising_funds.pdf', 'name'  => 'Положение о порядке и условиях привлечения денежных средств'],
    ['file' => 'regulation_granting_loans.pdf', 'name'  => 'Положение о порядке о порядке предоставления займов'],
    ['file' => 'regulation_of_property.pdf', 'name'  => 'Положение о порядке формирования и использования имущества'],
-   ['file' => 'regulation_of_property.pdf', 'name'  => 'Положение о порядке формирования и использования имущества'],
    ['file' => 'income_distribution_clause.pdf', 'name'  => 'Положение о порядке распределения доходов'],
    ['file' => 'membership_clause.pdf', 'name'  => 'Положение о членстве в КПК'],
    ['file' => 'regulation_of managements.pdf', 'name'  => 'Положение об органах управления КПК'],

@@ -11,8 +11,7 @@
       
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
          <div class="navbar-nav text-uppercase">
-            <a class="nav-item nav-link" href="/">Главная</a>
-            <a class="nav-item nav-link" href="/shareholders">Членство в КПК</a>
+            <a class="nav-item nav-link" href="/shareholders">Пайщику</a>
             <a class="nav-item nav-link" href="/loans">Займы</a>
             {{--<a class="nav-item nav-link" href="/deposits">Сбережения</a>--}}
             <a class="nav-item nav-link" href="/docs">Документы</a>
