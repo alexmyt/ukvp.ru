@@ -65,7 +65,7 @@ class Utils
       $minWorkTime = $this->minWorkTimes[$dow];
       $maxworkTime = $this->maxWorkTimes[$dow];
       
-      return ($curTime > $minWorkTime && $curTime < $maxworkTime);
+      return ($curTime >= $minWorkTime && $curTime <= $maxworkTime);
    }
    
    /*

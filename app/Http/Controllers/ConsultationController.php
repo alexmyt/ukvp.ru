@@ -38,10 +38,11 @@ class ConsultationController extends Controller
         
         $utils = new Utils;
         $curTime = time();
+        logger($request['callbackAt']);
         $cbTime = (int) $request->input('callbackAt',$curTime);
         if($cbTime === 0) $cbTime = $curTime;
         if (!$utils->isWorkTime($cbTime)){
-            logger("Запрос на обратный звонок в нерабочее время: "+ strftime("%c",$cbTime));
+            logger("Запрос на обратный звонок в нерабочее время: " . strftime("%c",$cbTime));
             return response(400);
         }
         

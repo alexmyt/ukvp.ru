@@ -36,7 +36,7 @@ $utils= new Utils;
                   @endphp
                   <p>К сожалению, наши операторы не могут позвонить Вам немедленно. Мы позвоним Вам в ближайшее рабочее время: {{strftime("%d.%m.%Y",$nextWorkTime)}}
                   с {{strftime("%R",$nextWorkTime)}} до {{strftime("%R",$nextWorkDayEnd)}}.</p>
-                  <input type="hidden" name="callbackAt" value="{{$nextWorkTime}}">
+                  <input type="hidden" id="giveCallbackModalCallBackAt" name="callbackAt" value="{{$nextWorkTime}}">
                @endif
                
                <div class="form-group">
