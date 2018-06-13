@@ -29,7 +29,7 @@ class PBXUtils{
       $this->pbx_ami_port = env("PBX_AMI_PORT");
       $this->pbx_ami_name = env("PBX_AMI_NAME","website");
       $this->pbx_ami_secret = env("PBX_AMI_SECRET");
-      $this->callback_manager = env("CALBACK_MANAGER","171");
+      $this->callback_manager = env("CALLBACK_MANAGER","171");
    }
    
    public function processCallbackRequest(CallbackRequest $cbRequest){

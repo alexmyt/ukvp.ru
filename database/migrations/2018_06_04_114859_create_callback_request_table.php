@@ -20,7 +20,7 @@ class CreateCallbackRequestTable extends Migration
             $table->string('client_name');
             $table->string('client_phone_number',11);
             $table->timestamp('callback_at')->useCurrent();
-            $table->string('action_id',69);
+            $table->string('action_id',69)->nullable();
             $table->index('status');
             $table->index('callback_at');
 
