@@ -10,7 +10,19 @@
 
 @endpush
 @section('content')
-<section>
+<div id="banner-loans" class="container">
+   <img src="{{asset('images/bg-credit1.jpg')}}" class="img-fluid">
+   <div class="d-flex flex-column">
+      <span id="banner-loans-str1">Потребительские</span>
+      <span id="banner-loans-str2">ЗАЙМЫ</span>
+      <span id="banner-loans-str3">Ставка от 21% годовых*</span>
+      <button type="button" class="btn btn-warning btn-lg" id="giveConsultationIndexBtn" data-toggle="modal" data-target="#giveCallbackModal">Получить консультацию</button>
+      <span id="banner-loans-str4" class="mt-3">* определяется индивидуально комитетом по займам<br>Услуги предоставляются только пайщикам КПК-КВП</span>
+   </div>
+</div>
+
+{{--   
+<section class="d-none">
    <div class="rev_slider_wrapper fullwidthbanner-container">
       <div id="head_slider" class="fullwidthbanner rev_slider"  data-navigationStyle="">
          <ul class="invisible">
@@ -81,6 +93,7 @@
       </div>
    </div>
 </section>
+--}}
 
 <section class="info-bar info-bar-clean py-2">
    <div class="container">

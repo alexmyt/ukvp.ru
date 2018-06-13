@@ -1,10 +1,10 @@
 <template>
-      <div class="dropdown d-flex justify-content-end flex-column border-left pl-2">
+      <div class="dropdown d-none d-lg-flex justify-content-end flex-column pl-2">
          <select v-model="selected_branch" @input="updateInitialBranch($event.target.value)" id="navbarRegionSelect" class="form-control form-control-sm border-0">
             <option v-for="branch in branches" :value=branch.value >{{ branch.text }}</option>
          </select>
          <a :href="phoneURI" class="text-center"><span id="navbarPhone" class="mx-auto"><small>{{ phoneCode }} </small>{{ phoneLocal }}</span></a>
-         <small id="navbarAddress" class="mx-auto">{{ addr }}</small>
+         <small id="navbarAddress" class="d-none mx-auto">{{ addr }}</small>
       </div>
 </template>
 

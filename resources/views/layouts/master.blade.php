@@ -20,6 +20,9 @@
         <!-- Font Awesome -->
         <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
         
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+        
         <!-- Custom CSS -->
         <link href="{{ mix('css/custom.css') }}" rel="stylesheet">
         
@@ -93,6 +96,7 @@
         
         {{--<!-- JavaScripts -->--}}
         <script src="{{ mix('js/app.js') }}"></script>
+        <script src="{{ mix('js/common.js') }}"></script>
         @stack('footer_scripts')
         <script type="text/javascript">
             jQuery(".countTo").appear(function ()

@@ -10,6 +10,11 @@ require('./bootstrap');
 require('./jquery.appear.js');
 require('./countTo.js');
 
+require('inputmask/dist/inputmask/jquery.inputmask');
+require('inputmask/dist/inputmask/inputmask.extensions');
+require('inputmask/dist/inputmask/inputmask.phone.extensions');
+require('inputmask/dist/inputmask/bindings/inputmask.binding');
+
 window.Vue = require('vue');
 Vue.use(require('vue-cookies'));
 

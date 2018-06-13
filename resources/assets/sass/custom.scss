@@ -15,19 +15,97 @@ body {
 nav {
    &.navbar{
       //border-bottom: 4px solid #dee2e6;
-		border-bottom: 4px solid $theme-first-color;
+		//border-bottom: 4px solid $theme-first-color;
    }
 
-	#navbarRegionSelect{
-		text-align-last: center;
+	&.bg-green{
+		background-color: $theme-first-color;
 	}
 	
-	.navbar-brand img{
-		height: 75px;
-		width: auto;
+	.navbar-brand{
+
+		img{
+			height: 60px;
+			width: auto;
+			float: left;
+			margin-top: 2px;
+		}
+		
+		span{
+			display: table-row;
+			text-align: center;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		#brand-opf{
+			font-size: 14px;
+			line-height: 16px;
+			font-style: normal;
+			font-weight: normal;
+			line-height: normal;
+			color: $theme-first-color;
+		}
+		#brand-name{
+			font-style: normal;
+			font-weight: bold;
+			line-height: normal;
+			font-size: 22px;
+			text-transform: uppercase;
+			color: $theme-first-color;	
+		}
+		#brand-slogan{
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			font-size: 16px;
+			letter-spacing: 0.07em;			
+			color: #EC2D2D;
+		}
 	}
+	
+	#navbarRegionSelect{
+		text-align-last: center;
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		text-align: center;		
+		color: #EC2D2D;
+		
+		:focus{
+			border: none;
+		}
+	}
+	
+	#navbarPhone{
+		font-family: 'Roboto', sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		line-height: normal;
+		font-size: 24px;
+		color: #2F80ED;		
+	}
+	
+	.navbar-nav .nav-item{
+		margin: 0 20px;
+	}
+
+	.navbar-nav .nav-item .nav-link{
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
 }
 
+.navbar-dark .navbar-nav .nav-link {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);	
+}
 .navbar-light .navbar-nav .nav-link {
 	color: $theme-first-color;
 	font-weight: 600;
@@ -66,6 +144,10 @@ nav {
          padding-bottom: 20px;
          margin: 0 !important;
          border-right: rgba(1,147,64,0.1) 1px solid;
+			
+			&:last-child{
+				border: none;
+			}
       }
    }
 	
@@ -267,4 +349,71 @@ ul.list-icons>li>i {
 		top: -15%;
 		right: -2%;
 	 }
+}
+
+#banner-loans{
+	position: relative;
+	
+	div{
+		position: absolute;
+		bottom: 	20px;
+		left: 20px;
+		//width: 450px;
+		
+		@media (min-width: 992px){
+			bottom: 80px;
+			left: 80px;
+		}
+		
+		span{
+			font-family: Roboto;
+			font-style: normal;
+			line-height: normal;
+			color: #FFFFFF;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+		
+		#banner-loans-str1{
+			font-weight: bold;
+			font-size: 18px;
+			text-transform: uppercase;
+
+			@media (min-width: 768px){
+				font-size: 36px;
+			}
+		}
+
+		#banner-loans-str2{
+			font-weight: bold;
+			font-size: 40px;
+			letter-spacing: 0.15em;
+			text-transform: uppercase;
+
+			@media (min-width: 768px){
+				font-size: 80px;
+			}
+		}
+		
+		#banner-loans-str3{
+			font-weight: bold;
+			font-size: 18px;
+
+			@media (min-width: 768px){
+				font-size: 36px;
+			}
+		}
+
+		#banner-loans-str4{
+			font-size: 12px;
+		}
+		
+		button{
+			max-width: 250px;
+			@media (min-width: 768px){
+				max-width: auto;
+			}
+		}
+
+		
+	}
 }

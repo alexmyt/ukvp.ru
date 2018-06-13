@@ -13,7 +13,9 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-	'ukvp\Console\Commands\SitemapGenerate'
+		'ukvp\Console\Commands\SitemapGenerate',
+		'ukvp\Console\Commands\CallbackProcessNext'
+
         //
     ];
 
@@ -25,9 +27,11 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-	$schedule->command('sitemap:generate')->daily();
+		$schedule->command('sitemap:generate')->daily();
         // $schedule->command('inspire')
         //          ->hourly();
+		
+		$schedule->command('callback:ProcessNext')->everyMinute();
     }
 
     /**
