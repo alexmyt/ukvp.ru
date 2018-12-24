@@ -4,7 +4,7 @@
         <loc>http://dev.ukvp.ru/</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -14,7 +14,7 @@
         <loc>http://dev.ukvp.ru/contacts</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -24,7 +24,7 @@
         <loc>http://dev.ukvp.ru/docs</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -34,7 +34,7 @@
         <loc>http://dev.ukvp.ru/loans</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -44,7 +44,7 @@
         <loc>http://dev.ukvp.ru/news/1</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -54,7 +54,7 @@
         <loc>http://dev.ukvp.ru/news/2</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -64,7 +64,7 @@
         <loc>http://dev.ukvp.ru/news/3</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -74,7 +74,7 @@
         <loc>http://dev.ukvp.ru/shareholders</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -84,7 +84,7 @@
         <loc>http://dev.ukvp.ru/storage/basic_standart_kpk.pdf</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -94,7 +94,7 @@
         <loc>http://dev.ukvp.ru/storage/cond_raising_funds.pdf</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -104,7 +104,7 @@
         <loc>http://dev.ukvp.ru/storage/gc_loan_agree.pdf</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -114,7 +114,7 @@
         <loc>http://dev.ukvp.ru/storage/income_distribution_clause.pdf</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -124,7 +124,7 @@
         <loc>http://dev.ukvp.ru/storage/membership_clause.pdf</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -134,7 +134,7 @@
         <loc>http://dev.ukvp.ru/storage/organisation_chart.pdf</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -144,7 +144,7 @@
         <loc>http://dev.ukvp.ru/storage/partner_card.pdf</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -154,7 +154,17 @@
         <loc>http://dev.ukvp.ru/storage/personal_data_agreement.pdf</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://dev.ukvp.ru/storage/personal_data_processing_policy.pdf</loc>
+    
+    
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -164,7 +174,7 @@
         <loc>http://dev.ukvp.ru/storage/regulation_granting_loans.pdf</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -174,7 +184,7 @@
         <loc>http://dev.ukvp.ru/storage/regulation_of%20managements.pdf</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     
@@ -184,7 +194,7 @@
         <loc>http://dev.ukvp.ru/storage/regulation_of_property.pdf</loc>
     
     
-        <lastmod>2018-06-13T00:00:03+03:00</lastmod>
+        <lastmod>2018-12-24T00:00:02+03:00</lastmod>
     
         <changefreq>daily</changefreq>
     

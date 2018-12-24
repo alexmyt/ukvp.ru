@@ -16,7 +16,7 @@
    
       <header_branch_selector></header_branch_selector>
 
-      <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" id="giveCallbackHeaderBtn" data-target="#giveCallbackModal">Заказать звонок</button>
+      {{--<button type="button" class="btn btn-danger btn-lg" data-toggle="modal" id="giveCallbackHeaderBtn" data-target="#giveCallbackModal">Заказать звонок</button>--}}
          
    </div>
 </nav>

@@ -160,6 +160,7 @@
             <div class="card">
                <div class="card-header text-uppercase">Новости</div>
                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-uppercase"><a href="{{route('news',4)}}">График работы в новогодние каникулы <br><span class="small text-muted">24.12.2018</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',3)}}">Очередное собрание пайщиков <br><span class="small text-muted">23.03.2018</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',2)}}">16 марта отделение в г.Урюпинске <span class="text-danger">не работает</span><br><span class="small text-muted">12.03.2018</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',1)}}">Внеочередное собрание уполномоченных<br><span class="small text-muted">27.12.2017</span></a></li>
