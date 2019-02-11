@@ -15,7 +15,7 @@
    <div class="d-flex flex-column">
       <span id="banner-loans-str1">Потребительские</span>
       <span id="banner-loans-str2">ЗАЙМЫ</span>
-      <span id="banner-loans-str3">Ставка от 21% годовых*</span>
+      <span id="banner-loans-str3">Ставка от 14% годовых*</span>
       <button type="button" class="btn btn-warning btn-lg" id="giveConsultationIndexBtn" data-toggle="modal" data-target="#giveCallbackModal">Получить консультацию</button>
       <span id="banner-loans-str4" class="mt-3">* определяется индивидуально комитетом по займам<br>Услуги предоставляются только пайщикам КПК-КВП</span>
    </div>

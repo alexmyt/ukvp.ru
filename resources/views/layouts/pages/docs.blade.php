@@ -10,6 +10,9 @@ $docs=array(
    ['file' => 'organisation_chart.pdf', 'name'  => 'Устав Кредитного потребительского кооператива "Касса взаимопомощи"'],
    ['file' => 'basic_standart_kpk.pdf', 'name'  => 'Базовый стандарт защиты прав и интересов физических и юридических лиц - получателей финансовых услуг, оказываемых членами саморегулируемых организаций в сфере финансового рынка, объединяющих кредитные потребительские кооперативы'],
    ['file' => 'personal_data_processing_policy.pdf', 'name'  => 'Политика в отношении обработки персональных данных'],
+   ['file' => 'balance.ods', 'name'  => 'Бухгалтерский баланс'],
+   ['file' => 'estimate_2018.ods', 'name'  => 'Смета доходов и расходов на 2018 год'],
+   ['file' => 'estimate_2017_impliment.ods', 'name'  => 'Исполнение сметы доходов и расходов за 2017 год'],
 
 );
 @endphp
@@ -22,7 +25,7 @@ $docs=array(
 <article>
    <div class="container">
       @foreach($docs as $doc)
-      <p><i class="far fa-file-pdf"></i> <a href="{{ asset('storage/'.$doc['file']) }}">{{$doc['name']}}</a></p>
+      <p><i class="far fa-file"></i> <a href="{{ asset('storage/'.$doc['file']) }}">{{$doc['name']}}</a></p>
       @endforeach
    </div>
 </article>
