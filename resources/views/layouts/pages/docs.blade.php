@@ -13,6 +13,8 @@ $docs=array(
    ['file' => 'balance.ods', 'name'  => 'Бухгалтерский баланс'],
    ['file' => 'estimate_2018.ods', 'name'  => 'Смета доходов и расходов на 2018 год'],
    ['file' => 'estimate_2017_impliment.ods', 'name'  => 'Исполнение сметы доходов и расходов за 2017 год'],
+   ['file' => 'audit_report_2017.pdf', 'name'  => 'Аудиторское заключение за 2017 год'],
+   ['file' => 'revision_act_2017.pdf', 'name'  => 'Акт ревизионной комиссии за 2017 год'],
 
 );
 @endphp
