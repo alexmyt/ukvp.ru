@@ -14,7 +14,7 @@
          <dt class="col-sm-4">ИНН:</dt>
          <dd class="col-sm-8">3438200496</dd>
          <dt class="col-sm-4">Расчетный счет:</dt>
-         <dd class="col-sm-8">40703810711100100034</dd>
+         <dd class="col-sm-8">40701810811000000152</dd>
          <dt class="col-sm-4">БИК:</dt>
          <dd class="col-sm-8">041806647</dd>
          <dt class="col-sm-4"><i class="far fa-file-pdf"></i> <a href="{{ asset('storage/partner_card.pdf') }}">Карта партнера</a></dt>
