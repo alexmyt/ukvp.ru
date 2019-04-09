@@ -16,7 +16,7 @@
       <span id="banner-loans-str1">Потребительские</span>
       <span id="banner-loans-str2">ЗАЙМЫ</span>
       <span id="banner-loans-str3">Ставка от 14% годовых*</span>
-      <button type="button" class="btn btn-warning btn-lg" id="giveConsultationIndexBtn" data-toggle="modal" data-target="#giveCallbackModal">Получить консультацию</button>
+      <!--<button type="button" class="btn btn-warning btn-lg" id="giveConsultationIndexBtn" data-toggle="modal" data-target="#giveCallbackModal">Получить консультацию</button>-->
       <span id="banner-loans-str4" class="mt-3">* определяется индивидуально комитетом по займам<br>Услуги предоставляются только пайщикам КПК-КВП</span>
    </div>
 </div>
@@ -160,6 +160,7 @@
             <div class="card">
                <div class="card-header text-uppercase">Новости</div>
                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-uppercase"><a href="{{route('news',5)}}">Очередное собрание пайщиков <br><span class="small text-muted">09.04.2019</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',4)}}">График работы в новогодние каникулы <br><span class="small text-muted">24.12.2018</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',3)}}">Очередное собрание пайщиков <br><span class="small text-muted">23.03.2018</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',2)}}">16 марта отделение в г.Урюпинске <span class="text-danger">не работает</span><br><span class="small text-muted">12.03.2018</span></a></li>
