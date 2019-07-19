@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "inputmask": "^3.3.11",
-        "vue-cookies": "^1.5.13"
+        "vue-cookies": "^1.5.13",
+        "vue-template-compiler": "^2.6.10"
     }
 }

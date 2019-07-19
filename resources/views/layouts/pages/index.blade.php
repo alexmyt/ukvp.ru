@@ -11,13 +11,17 @@
 @endpush
 @section('content')
 <div id="banner-loans" class="container">
-   <img src="{{asset('images/bg-credit1.jpg')}}" class="img-fluid">
-   <div class="d-flex flex-column">
-      <span id="banner-loans-str1">Потребительские</span>
+   <img src="{{asset('images/bg-credit_action_2019_1.jpg')}}" class="img-fluid">
+   
+   <div class="d-flex flex-column" id="banner-top">
+      <span id="banner-loans-str1">Осуществи свою мечту!</span>
+   </div>
+   
+   <div class="d-flex flex-column" id="banner-bottom">
       <span id="banner-loans-str2">ЗАЙМЫ</span>
-      <span id="banner-loans-str3">Ставка от 14% годовых*</span>
+      <span id="banner-loans-str3">на потребительские и другие нужды</span>
       <!--<button type="button" class="btn btn-warning btn-lg" id="giveConsultationIndexBtn" data-toggle="modal" data-target="#giveCallbackModal">Получить консультацию</button>-->
-      <span id="banner-loans-str4" class="mt-3">* определяется индивидуально комитетом по займам<br>Услуги предоставляются только пайщикам КПК-КВП</span>
+      <span id="banner-loans-str4" class="mt-3">* Срок проведения акции с 01.07.2019 по 31.08.2019. Займы предоставляются в рублях. Минимальная сумма займа - 5000 (Пять тысяч) руб., максимальная сумма — 3000000 (Три миллиона) руб. Срок займа от 1 мес. до 60 мес. Возможность досрочного погашения. Базовая процентная ставка - 21%. Индивидуальная процентная ставка устанавливается в зависимости от срока членства в кооперативе, кредитной истории, обеспечения займа. Проценты начисляются на остаток займа. Обязательное условие предоставления займа — членство в КПК-КВП. Член кредитного кооператива (Пайщик) несет солидарно с другими членами Кооператива субсидиарную ответственность в пределах невнесенной части дополнительного взноса по обязательствам кредитного кооператива.</span>
    </div>
 </div>
 
