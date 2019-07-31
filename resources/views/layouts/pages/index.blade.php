@@ -11,18 +11,19 @@
 @endpush
 @section('content')
 <div id="banner-loans" class="container">
-   <img src="{{asset('images/bg-credit_action_2019_1.jpg')}}" class="img-fluid">
+   <img src="{{asset('images/bg-credit_action_2019_2.jpg')}}" class="img-fluid">
    
-   <div class="d-flex flex-column" id="banner-top">
+   {{-- <div class="d-flex flex-column" id="banner-top">
       <span id="banner-loans-str1">Осуществи свою мечту!</span>
-   </div>
+   </div> --}}
    
-   <div class="d-flex flex-column" id="banner-bottom">
+   {{-- <div class="d-flex flex-column" id="banner-bottom">
       <span id="banner-loans-str2">ЗАЙМЫ</span>
       <span id="banner-loans-str3">на потребительские и другие нужды</span>
       <!--<button type="button" class="btn btn-warning btn-lg" id="giveConsultationIndexBtn" data-toggle="modal" data-target="#giveCallbackModal">Получить консультацию</button>-->
-      <span id="banner-loans-str4" class="mt-3">* Срок проведения акции с 01.07.2019 по 31.08.2019. Займы предоставляются в рублях. Минимальная сумма займа - 5000 (Пять тысяч) руб., максимальная сумма — 3000000 (Три миллиона) руб. Срок займа от 1 мес. до 60 мес. Возможность досрочного погашения. Базовая процентная ставка - 21%. Индивидуальная процентная ставка устанавливается в зависимости от срока членства в кооперативе, кредитной истории, обеспечения займа. Проценты начисляются на остаток займа. Обязательное условие предоставления займа — членство в КПК-КВП. Член кредитного кооператива (Пайщик) несет солидарно с другими членами Кооператива субсидиарную ответственность в пределах невнесенной части дополнительного взноса по обязательствам кредитного кооператива.</span>
-   </div>
+      <span id="banner-loans-str4" class="mt-3">Акция* Срок проведения акции с 01.08.2019 по 31.08.2019. Займы предоставляются в рублях. Минимальная сумма займа - 20000 (Двадцать тысяч) руб., максимальная сумма — 500000 (Пятьсот тысяч) руб. Срок займа от 1 мес. до 12 мес. Процентная ставка за пользование займом 14% годовых. Проценты начисляются на остаток займа. Кооператив вправе потребовать предоставление обеспечения по займу. Возможность досрочного погашения. Обязательное условие предоставления займа — членство в КПК-КВП. Подробности акции — в офисах кооператива и по телефонам, указанным в объявлении.<br>
+         Член кредитного кооператива (Пайщик) несет солидарно с другими членами Кооператива субсидиарную ответственность в пределах невнесенной части дополнительного взноса по обязательствам кредитного кооператива. Предложение не является офертой.</span>
+   </div> --}}
 </div>
 
 {{--   
@@ -164,6 +165,8 @@
             <div class="card">
                <div class="card-header text-uppercase">Новости</div>
                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-uppercase"><a href="{{route('news',7)}}"><span class="text-danger">Акция!</span> Краткосрочные займы под 14% годовых <br><span class="small text-muted">31.07.2019</span></a></li>
+                  <li class="list-group-item text-uppercase"><a href="{{route('news',6)}}"><span class="text-danger">Акция!</span> Займы под пониженную ставку <br><span class="small text-muted">01.07.2019</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',5)}}">Очередное собрание пайщиков <br><span class="small text-muted">09.04.2019</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',4)}}">График работы в новогодние каникулы <br><span class="small text-muted">24.12.2018</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',3)}}">Очередное собрание пайщиков <br><span class="small text-muted">23.03.2018</span></a></li>
