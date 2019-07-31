@@ -11,7 +11,7 @@
 @endpush
 @section('content')
 <div id="banner-loans" class="container">
-   <img src="{{asset('images/bg-credit_action_2019_2.jpg')}}" class="img-fluid">
+   <a href="{{route('news',7)}}"><img src="{{asset('images/bg-credit_action_2019_2.jpg')}}" class="img-fluid"></a>
    
    {{-- <div class="d-flex flex-column" id="banner-top">
       <span id="banner-loans-str1">Осуществи свою мечту!</span>
