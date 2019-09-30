@@ -11,7 +11,7 @@
 @endpush
 @section('content')
 <div id="banner-loans" class="container">
-   <a href="{{route('news',7)}}"><img src="{{asset('images/bg-credit_action_2019_3.jpg')}}" class="img-fluid"></a>
+   <a href="{{route('news',7)}}"><img src="{{asset('images/bg-credit_action_2019_4.jpg')}}" class="img-fluid"></a>
    
    {{-- <div class="d-flex flex-column" id="banner-top">
       <span id="banner-loans-str1">Осуществи свою мечту!</span>
@@ -104,23 +104,23 @@
    <div class="container">
       <div class="row text-center">
          <div class="col-sm-3 col-6">
-            <h3 class="fs-30"><span class="countTo" data-speed="2000">14 000</span><span>+</span></h3>
+            <h3 class="fs-30"><span class="countTo" data-speed="2000">9 000</span><span>+</span></h3>
             <p>АКТИВНЫХ ПАЙЩИКОВ</p>
          </div>
 
          <div class="col-sm-3 col-6">
-            <h3 class="fs-30"><span class="countTo" data-speed="1500">5 230</span></h3>
-            <p>ОФОРМЛЕНО ЗАЙМОВ В 2017г.</p>
+            <h3 class="fs-30"><span class="countTo" data-speed="1500">4 170</span></h3>
+            <p>ОФОРМЛЕНО ЗАЙМОВ В 2018г.</p>
          </div>
 
          <div class="col-sm-3 col-6">
-            <h3 class="fs-30"><span class="countTo" data-speed="2500">369 781 000</span><small> руб.</small></h3>
-            <p>ВЫДАНО ЗАЙМОВ В 2017г.</p>
+            <h3 class="fs-30"><span class="countTo" data-speed="2500">286 117 500</span><small> руб.</small></h3>
+            <p>ВЫДАНО ЗАЙМОВ В 2018г.</p>
          </div>
 
          <div class="col-sm-3 col-6">
-            <h3 class="fs-30"><span class="countTo" data-speed="3500">34 620 000</span><small> руб.</small></h3>
-            <p>ПРИЧИСЛЕНО % НА СБЕРЕЖЕНИЯ В 2017г.</p>
+            <h3 class="fs-30"><span class="countTo" data-speed="3500">13 311 000</span><small> руб.</small></h3>
+            <p>ПРИЧИСЛЕНО % НА СБЕРЕЖЕНИЯ В 2018г.</p>
          </div>
 
       </div>
