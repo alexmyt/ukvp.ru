@@ -11,7 +11,7 @@
 @endpush
 @section('content')
 <div id="banner-loans" class="container">
-   <a href="{{route('news',7)}}"><img src="{{asset('images/bg-credit_action_2019_6.jpg')}}" class="img-fluid"></a>
+   <a href="{{route('news',8)}}"><img src="{{asset('images/bg-credit_action_2019_6.jpg')}}" class="img-fluid"></a>
    
    {{-- <div class="d-flex flex-column" id="banner-top">
       <span id="banner-loans-str1">Осуществи свою мечту!</span>
@@ -165,13 +165,11 @@
             <div class="card">
                <div class="card-header text-uppercase">Новости</div>
                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-uppercase"><a href="{{route('news',9)}}">График работы в новогодние каникулы <br><span class="small text-muted">30.12.2019</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',8)}}"><span class="text-danger">Акция!</span> Краткосрочные займы под 14% годовых <br><span class="small text-muted">30.11.2019</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',6)}}"><span class="text-danger">Акция!</span> Займы под пониженную ставку <br><span class="small text-muted">01.07.2019</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',5)}}">Очередное собрание пайщиков <br><span class="small text-muted">09.04.2019</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',4)}}">График работы в новогодние каникулы <br><span class="small text-muted">24.12.2018</span></a></li>
-                  <li class="list-group-item text-uppercase"><a href="{{route('news',3)}}">Очередное собрание пайщиков <br><span class="small text-muted">23.03.2018</span></a></li>
-                  <li class="list-group-item text-uppercase"><a href="{{route('news',2)}}">16 марта отделение в г.Урюпинске <span class="text-danger">не работает</span><br><span class="small text-muted">12.03.2018</span></a></li>
-                  <li class="list-group-item text-uppercase"><a href="{{route('news',1)}}">Внеочередное собрание уполномоченных<br><span class="small text-muted">27.12.2017</span></a></li>
                </ul>
             </div>
                
