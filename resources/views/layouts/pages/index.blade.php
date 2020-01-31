@@ -10,24 +10,24 @@
 
 @endpush
 @section('content')
-<div id="banner-loans" class="container">
+{{-- <div id="banner-loans" class="container">
    <a href="{{route('news',8)}}"><img src="{{asset('images/bg-credit_action_2019_6.jpg')}}" class="img-fluid"></a>
    
-   {{-- <div class="d-flex flex-column" id="banner-top">
+   <div class="d-flex flex-column" id="banner-top">
       <span id="banner-loans-str1">Осуществи свою мечту!</span>
-   </div> --}}
+   </div>
    
-   {{-- <div class="d-flex flex-column" id="banner-bottom">
+   <div class="d-flex flex-column" id="banner-bottom">
       <span id="banner-loans-str2">ЗАЙМЫ</span>
       <span id="banner-loans-str3">на потребительские и другие нужды</span>
       <!--<button type="button" class="btn btn-warning btn-lg" id="giveConsultationIndexBtn" data-toggle="modal" data-target="#giveCallbackModal">Получить консультацию</button>-->
       <span id="banner-loans-str4" class="mt-3">Акция* Срок проведения акции с 01.08.2019 по 31.08.2019. Займы предоставляются в рублях. Минимальная сумма займа - 20000 (Двадцать тысяч) руб., максимальная сумма — 500000 (Пятьсот тысяч) руб. Срок займа от 1 мес. до 12 мес. Процентная ставка за пользование займом 14% годовых. Проценты начисляются на остаток займа. Кооператив вправе потребовать предоставление обеспечения по займу. Возможность досрочного погашения. Обязательное условие предоставления займа — членство в КПК-КВП. Подробности акции — в офисах кооператива и по телефонам, указанным в объявлении.<br>
          Член кредитного кооператива (Пайщик) несет солидарно с другими членами Кооператива субсидиарную ответственность в пределах невнесенной части дополнительного взноса по обязательствам кредитного кооператива. Предложение не является офертой.</span>
-   </div> --}}
-</div>
+   </div>
+</div> --}}
 
-{{--   
-<section class="d-none">
+  
+<section>
    <div class="rev_slider_wrapper fullwidthbanner-container">
       <div id="head_slider" class="fullwidthbanner rev_slider"  data-navigationStyle="">
          <ul class="invisible">
@@ -64,7 +64,7 @@
                
             </li>
                
-            <li data-transition="crossfade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+            {{-- <li data-transition="crossfade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
                <img src="{{asset('images/1x1.png')}}" data-lazyload="{{asset('images/1980x550/slider-balluns.jpg')}}" alt="" class="rev-slidebg" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" />
 
                <div class="tp-caption customin ltl tp-resizeme medium_text text_white"
@@ -92,13 +92,13 @@
                   <span class="fw-300">1998-2018 - КПК "Касса взаимопомощи"</span>
                </div>
                
-            </li>
+            </li> --}}
          </ul>
          <div class="tp-bannertimer"></div>
       </div>
    </div>
 </section>
---}}
+
 
 <section class="info-bar info-bar-clean py-2">
    <div class="container">
@@ -109,18 +109,18 @@
          </div>
 
          <div class="col-sm-3 col-6">
-            <h3 class="fs-30"><span class="countTo" data-speed="1500">4 170</span></h3>
-            <p>ОФОРМЛЕНО ЗАЙМОВ В 2018г.</p>
+            <h3 class="fs-30"><span class="countTo" data-speed="1500">4 033</span></h3>
+            <p>ОФОРМЛЕНО ЗАЙМОВ В 2019г.</p>
          </div>
 
          <div class="col-sm-3 col-6">
-            <h3 class="fs-30"><span class="countTo" data-speed="2500">286 117 500</span><small> руб.</small></h3>
-            <p>ВЫДАНО ЗАЙМОВ В 2018г.</p>
+            <h3 class="fs-30"><span class="countTo" data-speed="2500">294 110 700</span><small> руб.</small></h3>
+            <p>ВЫДАНО ЗАЙМОВ В 2019г.</p>
          </div>
 
          <div class="col-sm-3 col-6">
-            <h3 class="fs-30"><span class="countTo" data-speed="3500">13 311 000</span><small> руб.</small></h3>
-            <p>ПРИЧИСЛЕНО % НА СБЕРЕЖЕНИЯ В 2018г.</p>
+            <h3 class="fs-30"><span class="countTo" data-speed="3500">40 183 000</span><small> руб.</small></h3>
+            <p>ПРИЧИСЛЕНО % НА СБЕРЕЖЕНИЯ В 2019г.</p>
          </div>
 
       </div>
