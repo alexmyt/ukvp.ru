@@ -248,7 +248,7 @@
                         <dd class="col-sm-10" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                            <meta itemprop="addressRegion" content="Волгоградская обл.">
                            <meta itemprop="addressLocality" content="р.п.Средняя Ахтуба">
-                           <p itemprop="streetAddress">ул.Ленина, д.34А</p>
+                           <p itemprop="streetAddress">ул.Октябрьская, д.84, помещение 62</p>
                         </dd>
                         
                         <dt class="col-sm-2 text-center"><i class="far fa-clock"></i></dt>
