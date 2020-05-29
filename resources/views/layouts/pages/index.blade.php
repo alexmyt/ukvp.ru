@@ -165,12 +165,11 @@
             <div class="card">
                <div class="card-header text-uppercase">Новости</div>
                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-uppercase"><a href="{{route('news',14)}}">Общее собрание членов кооператива в форме собрания уполномоченных <br><span class="small text-muted">29.05.2020</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',13)}}">График работы в майские праздники <br><span class="small text-muted">30.04.2020</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',11)}}">Офисы КПК возобновляют работу с клиентами <span class="text-danger">в ограниченном режиме</span> <br><span class="small text-muted">20.04.2020</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',10)}}">Работа КПК в период мероприятий, связанных с COVID-19 <br><span class="small text-muted">27.03.2020</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',9)}}">График работы в новогодние каникулы <br><span class="small text-muted">30.12.2019</span></a></li>
-                  <li class="list-group-item text-uppercase"><a href="{{route('news',8)}}"><span class="text-danger">Акция!</span> Краткосрочные займы под 14% годовых <br><span class="small text-muted">30.11.2019</span></a></li>
-                  <li class="list-group-item text-uppercase"><a href="{{route('news',6)}}"><span class="text-danger">Акция!</span> Займы под пониженную ставку <br><span class="small text-muted">01.07.2019</span></a></li>
                </ul>
             </div>
                
