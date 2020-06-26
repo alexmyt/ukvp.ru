@@ -1,10 +1,10 @@
 # Variables
 variables:
-  MYSQL_ROOT_PASSWORD: root
-  MYSQL_USER: mysql_user
-  MYSQL_PASSWORD: mysql_password
+  MYSQL_ROOT_PASSWORD: bPdl016KAqvZqdoGVVJG
+  MYSQL_USER: admin
+  MYSQL_PASSWORD: bPdl016KAqvZqdoGVVJG
   MYSQL_DATABASE: mysql_db
-  DB_HOST: mysql
+  DB_HOST: 18.157.244.85
 
 test:
   stage: test
