@@ -2,7 +2,7 @@
 variables:
   MYSQL_ROOT_PASSWORD: bPdl016KAqvZqdoGVVJG
   MYSQL_USER: admin
-  MYSQL_PASSWORD: !LmP9p7jGwyP
+  MYSQL_PASSWORD: "!LmP9p7jGwyP"
   MYSQL_DATABASE: dev-db
   DB_HOST: dev-test-mysql-1.c1venzhec3tj.eu-central-1.rds.amazonaws.com
 
