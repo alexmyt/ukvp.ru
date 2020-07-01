@@ -15,7 +15,7 @@ test:
     GIT_CLONE_PATH: $CI_BUILDS_DIR/ukvp.ru
     
   script:
-    - yarn install --pure-lockfile
+    - npm install
     - composer install --prefer-dist --no-ansi --no-interaction --no-progress
     #- cp .env.example .env
     #- php artisan key:generate
