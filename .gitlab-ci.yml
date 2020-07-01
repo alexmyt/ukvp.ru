@@ -9,12 +9,12 @@ variables:
 test:
   stage: test
   services:
-    - mysql:5.7
-  image: edbizarro/gitlab-ci-pipeline-php:7.4-alpine
+    - mysql:5.5
+  #image: edbizarro/gitlab-ci-pipeline-php:7.4-alpine
   script:
     - yarn install --pure-lockfile
     - composer install --prefer-dist --no-ansi --no-interaction --no-progress
-    - cp .env.example .env
-    - php artisan key:generate
-    - php artisan migrate:refresh --seed
+    #- cp .env.example .env
+    #- php artisan key:generate
+    #- php artisan migrate:refresh --seed
     - ./vendor/phpunit/phpunit/phpunit -v --coverage-text --colors=never --stderr
