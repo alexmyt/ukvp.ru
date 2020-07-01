@@ -12,7 +12,7 @@ test:
     - dev
     - vds5
   variables:
-    GIT_CLONE_PATH: /var/www/ukvp.ru
+    GIT_CLONE_PATH: $CI_BUILDS_DIR/ukvp.ru
     
   script:
     - yarn install --pure-lockfile
