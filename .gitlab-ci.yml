@@ -8,9 +8,12 @@ variables:
 
 test:
   stage: test
-  services:
-    - mysql:5.5
-  #image: edbizarro/gitlab-ci-pipeline-php:7.4-alpine
+  tags:
+    - dev
+    - vds5
+  variables:
+    GIT_CLONE_PATH: /var/www/ukvp.ru
+    
   script:
     - yarn install --pure-lockfile
     - composer install --prefer-dist --no-ansi --no-interaction --no-progress
