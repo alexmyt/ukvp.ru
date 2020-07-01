@@ -20,4 +20,5 @@ test:
     #- cp .env.example .env
     #- php artisan key:generate
     #- php artisan migrate:refresh --seed
-    - ./vendor/phpunit/phpunit/phpunit -v --coverage-text --colors=never --stderr
+    #- ./vendor/phpunit/phpunit/phpunit -v --coverage-text --colors=never --stderr
+    - npm run dev
