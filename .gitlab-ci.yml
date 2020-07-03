@@ -1,9 +1,25 @@
+stages:
+  - prepare
+  - test
+
+
 # Variables
 variables:
-  MYSQL_USER: $MYSQL_USER
-  MYSQL_PASSWORD: $MYSQL_PASSWORD
-  MYSQL_DATABASE: $MYSQL_DATABASE
+  DB_USERNAME: $MYSQL_USER
+  DB_PASSWORD: $MYSQL_PASSWORD
+  DB_DATABASE: $MYSQL_DATABASE
   DB_HOST: $MYSQL_HOST
+
+prepare:
+  stage: prepare
+  tags: 
+    - development
+    - vds5
+  variables:
+    GIT_CLONE_PATH: $CI_BUILDS_DIR/ukvp.ru
+
+  script:
+    - npm install
 
 test:
   stage: test
