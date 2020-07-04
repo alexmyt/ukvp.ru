@@ -21,7 +21,7 @@
     },
     "dependencies": {
         "inputmask": "^3.3.11",
-        "node": "^14.5.0",
+        "node": "^12.18.2",
         "vue-cookies": "^1.7.0",
         "vue-template-compiler": "^2.6.11"
     }
