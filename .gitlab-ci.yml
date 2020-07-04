@@ -34,10 +34,9 @@ composer:
     paths:
       - vendor/
 
-npm:
+yarn:
   stage: preparation
   script:
-#    - npm install
     - yarn --version
     - yarn install --pure-lockfile
   artifacts:
