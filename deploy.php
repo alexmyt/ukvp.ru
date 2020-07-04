@@ -22,9 +22,9 @@ add('writable_dirs', []);
 
 // Hosts
 
-host('project.com')
-    ->set('deploy_path', '~/{{application}}');....
-....
+localhost()
+    ->set('deploy_path', '/var/www/ukvp.ru');
+
 // Tasks
 
 task('build', function () {

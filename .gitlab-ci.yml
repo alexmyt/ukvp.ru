@@ -1,8 +1,7 @@
 stages:
   - preparation
   - test
-  - buildings
-
+  - building
 
 # Variables
 variables:
