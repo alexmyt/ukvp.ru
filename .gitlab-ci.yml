@@ -92,3 +92,7 @@ deploy-test:
     - yarn
   script:
     - dep deploy testing --tag=$CI_COMMIT_REF_NAME -vvv
+  environment:
+    name: testing
+    url: https://dev.ukvp.ru
+    
