@@ -40,7 +40,9 @@ npm:
     - dev
     - vds5
   script:
-    - npm install
+#    - npm install
+    - yarn --version
+    - yarn install --pure-lockfile
   artifacts:
     paths:
       - node_modules/
