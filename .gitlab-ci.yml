@@ -1,6 +1,5 @@
 stages:
   - preparation
-  - test
   - building
 
 # Variables
@@ -15,10 +14,6 @@ cache:
 
 composer:
   stage: preparation
-  tags: 
-    - dev
-    - vds5
-
   script:
     - php -v
     - composer install --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts
@@ -85,3 +80,14 @@ db-seeding:
       - db.sql
     expire_in: 1 days
     when: always
+
+deploy-test:
+  stage: deploy
+  tags: 
+    - dev
+    - vds5
+  dependencies:
+    - composer
+    - yarn
+  script:
+    - dep deploy
