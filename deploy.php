@@ -48,7 +48,6 @@ task('deploy:secrets', function () {
 });
 
 // Hosts
-
 localhost()
     ->set('deploy_path', '/var/www/ukvp.ru')
     ->stage('testing');
