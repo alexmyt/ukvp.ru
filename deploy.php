@@ -10,7 +10,7 @@ set('application', 'my_project');
 set('repository', 'https://gitlab.com/ukvp/ukvp.ru');
 
 // [Optional] Allocate tty for git clone. Default value is false.
-set('git_tty', true);
+//set('git_tty', true);
 
 // Shared files/dirs between deploys.
 add('shared_files', []);
@@ -36,4 +36,4 @@ after('deploy:failed', 'deploy:unlock');
 
 // Migrate database before symlink new release.
 
-before('deploy:symlink', 'artisan:migrate');
+//before('deploy:symlink', 'artisan:migrate');
