@@ -26,6 +26,8 @@ add('shared_dirs', []);
 // Writable dirs by web server.
 add('writable_dirs', []);
 
+set('default_stage','testing');
+
 // Configuring the rsync exclusions. 
 // You'll want to exclude anything that you don't want on the production server.  
 add('rsync', [
@@ -50,6 +52,7 @@ task('deploy:secrets', function () {
 // Hosts
 localhost()
     ->set('deploy_path', '/var/www/ukvp.ru')
+    ->set('keep_releases',1)
     ->stage('testing');
 
 // Tasks
