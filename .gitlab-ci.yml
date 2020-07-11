@@ -30,7 +30,7 @@ composer:
   artifacts:
     paths:
       - .env
-    expire_in: 1 days
+    expire_in: 2 hrs
     when: always
 
 yarn:
