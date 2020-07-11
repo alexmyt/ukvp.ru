@@ -9,7 +9,7 @@ variables:
   DB_PASSWORD: $MYSQL_PASSWORD
   DB_DATABASE: $MYSQL_DATABASE
   DB_HOST: $MYSQL_HOST
-  CI_DEBUG_TRACE: "true"
+  #CI_DEBUG_TRACE: "true"
 
 composer:
   stage: preparation
