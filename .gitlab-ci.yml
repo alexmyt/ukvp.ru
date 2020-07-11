@@ -11,6 +11,11 @@ variables:
   DB_HOST: $MYSQL_HOST
   #CI_DEBUG_TRACE: "true"
 
+# inherit all global cache settings
+e: &global_cache
+  #key: "$CI_JOB_NAME-$CI_COMMIT_REF_SLUG"
+  key: "$CI_COMMIT_REF_SLUG"
+
 composer:
   stage: preparation
   script:
@@ -25,7 +30,7 @@ composer:
     expire_in: 1 days
     when: always
   cache:
-    key: "$CI_JOB_NAME-$CI_COMMIT_REF_SLUG"
+    <<: *global_cache
     paths:
       - vendor/
 
@@ -40,7 +45,7 @@ yarn:
     expire_in: 1 days
     when: always
   cache:
-    key: "$CI_JOB_NAME-$CI_COMMIT_REF_SLUG"
+    <<: *global_cache
     paths:
       - node_modules/    
 
