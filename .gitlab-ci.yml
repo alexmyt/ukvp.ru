@@ -5,10 +5,10 @@ stages:
 
 # Variables
 variables:
-  DB_USERNAME: $MYSQL_USER
-  DB_PASSWORD: $MYSQL_PASSWORD
-  DB_DATABASE: $MYSQL_DATABASE
-  DB_HOST: $MYSQL_HOST
+  DB_USERNAME: $DB_USERNAME
+  DB_PASSWORD: $DB_PASSWORD
+  DB_DATABASE: $DB_DATABASE
+  DB_HOST: $DB_HOST
   #CI_DEBUG_TRACE: "true"
 
 # inherit all global cache settings
@@ -24,7 +24,8 @@ composer:
   stage: preparation
   script:
     - php -v
-    - composer install --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts
+    - composer install --prefer-dist --no-ansi --no-interaction --no-progress --no-autoloader --no-scripts
+    - composer install --no-dev --prefer-dist --no-ansi --no-interaction --no-progress --no-autoloader --no-scripts
     - cp .env.example .env
     - php artisan key:generate
   artifacts:
