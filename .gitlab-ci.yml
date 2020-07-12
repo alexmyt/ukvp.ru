@@ -1,3 +1,13 @@
+# GitLab CI help:      <https://docs.gitlab.com/ee/ci/yaml/>
+# GitLab environments: <https://docs.gitlab.com/ee/ci/variables/>
+#
+# IMPORTANT NOTICES:
+# 1. You should make an protected tags rules in repository. Rules list:
+# - Tag "*"; Allowed to create "No one"
+# - Tag "v*.*.*"; Allowed to create "Maintainers"
+# 2. You should make "Push Rule" - "Branch name" regex `[a-z0-9\/\-]+`
+# 3. You should protect `master` branch - push for "Maintainers" only
+
 stages:
   - preparation
   - building
@@ -8,7 +18,7 @@ variables:
   DB_USERNAME: $DB_USERNAME
   DB_PASSWORD: $DB_PASSWORD
   DB_DATABASE: $DB_DATABASE
-  #DB_HOST: $DB_HOST
+  DB_HOST: $DB_HOST
   CI_DEBUG_TRACE: "true"
 
 # inherit all global cache settings
