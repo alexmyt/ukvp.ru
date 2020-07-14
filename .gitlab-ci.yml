@@ -19,7 +19,7 @@ variables:
   DB_PASSWORD: $DB_PASSWORD
   DB_DATABASE: $DB_DATABASE
   DB_HOST: $DB_HOST
-  CI_DEBUG_TRACE: "true"
+  #CI_DEBUG_TRACE: "true"
 
 # inherit all global cache settings
 cache: &global_cache
@@ -48,11 +48,14 @@ yarn:
     - yarn --version
     - yarn install --pure-lockfile
 
-build-assets:
+build_assets:
   stage: building
   # Download the artifacts for these jobs
   dependencies:
     - composer
+  cache:
+    <<: *global_cache
+    policy: pull
   script:
     - yarn --version
     - yarn run production --progress false
@@ -64,11 +67,8 @@ build-assets:
       - public/mix-manifest.json
     expire_in: 1 days
     when: always
-  cache:
-    <<: *global_cache
-    policy: pull
 
-db-seeding:
+db_seeding:
   stage: building
   services:
     - name: mysql:8.0
@@ -76,6 +76,9 @@ db-seeding:
   # Download the artifacts for these jobs
   dependencies:
     - composer
+  cache:
+    <<: *global_cache
+    policy: pull
   script:
     - mysql --version
     - php artisan migrate:fresh --seed
@@ -86,25 +89,34 @@ db-seeding:
       - db.sql
     expire_in: 1 days
     when: always
-  cache:
-    <<: *global_cache
-    policy: pull
 
-deploy-test:
+deploy_test:
   stage: deploy
   rules:
-    - if: '$CI_COMMIT_BRANCH == "develop"'
+    - if: '$CI_COMMIT_BRANCH != "master"'
   environment:
     name: testing
     url: https://dev.ukvp.ru
   tags: 
     - dev
     - vds5
+    - shell
   dependencies:
     - composer
-  script:
-    - dep deploy testing --tag=$CI_COMMIT_REF_NAME -vvv
   cache:
     <<: *global_cache
     policy: pull
+  script:
+    - dep deploy testing --tag=$CI_COMMIT_REF_NAME -vvv
     
+deploy_prod:
+  stage: deploy
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v\d+\.\d+\.\d+$/ && $CI_COMMIT_BRANCH == ""' # when add a tag, not push
+  tags:
+    - shell
+  cache:
+    <<: *global_cache
+    policy: pull
+  script:
+    - echo 'Deploy to prod'
