@@ -11,45 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.pages.index');
-});
+Route::get('/news/{id}', 'NewsController')
+    ->name('news');
 
-Route::get('/shareholders', function () {
-    return view('layouts.pages.shareholders');
-});
-
-Route::get('/loans', function () {
-    return view('layouts.pages.loans');
-});
-
-Route::get('/deposits', function () {
-    return view('layouts.pages.deposits');
-});
-
-Route::get('/contacts', function () {
-    return view('layouts.pages.contacts');
-});
-
-Route::get('/docs', function () {
-    return view('layouts.pages.docs');
-});
-
-Route::get('/news/{id}', function ($id) {
-    return view('layouts.pages.news.'.$id);
-})->name('news');
-
-
-// Rederects from old-site URL's
-Route::get('/index.html',function(){
-    return redirect(config('app.url'),301);
-});
-
-Route::get('/conditions_of_membership.html',function(){
-    return redirect('/shareholders',301);
-});
-
-Route::get('/generalmeeting2018-1.html',function(){
-    return redirect('/news/1',301);
-});
+Route::get('/', 'PageController@index');
+Route::get('/{page}', 'PageController@show')
+    ->where('page','shareholders|loans|deposits|contacts|docs');
 
