@@ -15,5 +15,6 @@ Route::get('/news/{id}', 'NewsController')
     ->name('news');
 
 Route::get('/', 'PageController@index');
-Route::get('/{$page}', 'PageController@show');
+Route::get('/{page}', 'PageController@show')
+    ->where('page','shareholders|loans|deposits|contacts|docs');
 
