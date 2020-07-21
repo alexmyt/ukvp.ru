@@ -110,6 +110,7 @@ deploy_test:
     - shell
   dependencies:
     - composer
+    - build_assets
   cache:
     <<: *global_cache
     policy: pull
