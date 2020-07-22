@@ -18,6 +18,7 @@ workflow:
 stages:
   - preparation
   - building
+  - testing
   - deploy
 
 # Variables
@@ -97,6 +98,27 @@ db_seeding:
     expire_in: 1 days
     when: always
 
+testing:
+  stage: testing
+  dependencies:
+    - composer
+    - build_assets
+    - db_seeding
+  cache:
+    <<: *global_cache
+    policy: pull
+  script:
+    - php -v
+    - mysql --host="${DB_HOST}" --user="${DB_USERNAME}" --password="${DB_PASSWORD}" "${DB_DATABASE}" < db.sql
+    - ./vendor/phpunit/phpunit/phpunit --version
+    - php -d short_open_tag=off ./vendor/phpunit/phpunit/phpunit -v --colors=never --stderr
+  artifacts:
+    paths:
+      - ./storage/logs # for debugging
+    expire_in: 1 days
+    when: on_failure
+
+
 deploy_test:
   stage: deploy
   rules:
@@ -110,6 +132,7 @@ deploy_test:
     - shell
   dependencies:
     - composer
+    - build_assets
   cache:
     <<: *global_cache
     policy: pull
@@ -126,4 +149,10 @@ deploy_prod:
     <<: *global_cache
     policy: pull
   script:
-    - echo 'Deploy to prod'
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$DEPLOYER_SSH_PRIVATE_KEY")
+    - dep deploy prod --tag=$CI_COMMIT_REF_NAME -vvv
+  environment:
+    name: production
+    url: https://ukvp.ru
