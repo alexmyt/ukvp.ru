@@ -149,4 +149,11 @@ deploy_prod:
     <<: *global_cache
     policy: pull
   script:
-    - echo 'Deploy to prod'
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$DEPLOYER_SSH_PRIVATE_KEY")
+    - dep deploy prod --tag=$CI_COMMIT_REF_NAME -vvv
+  environment:
+    name: production
+    url: https://ukvp.ru
+  when: manual

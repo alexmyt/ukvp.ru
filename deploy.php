@@ -55,6 +55,11 @@ localhost()
     ->set('keep_releases',1)
     ->stage('testing');
 
+host('vds1.ukvp.ru')
+    ->set('deploy_path', '/var/www/ukvp.ru')
+    ->set('keep_releases',3)
+    ->stage('prod');
+
 // Tasks
 
 task('build', function () {
