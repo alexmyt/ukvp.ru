@@ -27,7 +27,7 @@ variables:
   DB_PASSWORD: $DB_PASSWORD
   DB_DATABASE: $DB_DATABASE
   DB_HOST: $DB_HOST
-  #CI_DEBUG_TRACE: "true"
+  CI_DEBUG_TRACE: "true"
 
 # inherit all global cache settings
 cache: &global_cache
