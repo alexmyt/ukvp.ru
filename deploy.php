@@ -56,6 +56,7 @@ localhost()
     ->stage('testing');
 
 host('vds1.ukvp.ru')
+    ->user('deployer')
     ->set('deploy_path', '/var/www/ukvp.ru')
     ->set('keep_releases',3)
     ->stage('prod');
