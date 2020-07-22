@@ -11,6 +11,12 @@ use ukvp\PBXUtils;
 
 class PBXUtilsTest extends TestCase
 {
+
+	protected function setUp(): void {
+		parent::setUp();
+		$this->markTestSkipped('Disabled');
+	}
+
     /**
      * A basic test example.
      *

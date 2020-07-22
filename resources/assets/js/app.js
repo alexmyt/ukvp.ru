@@ -25,7 +25,7 @@ Vue.use(require('vue-cookies'));
  */
 
 //Vue.component('example-component', require('./components/ExampleComponent.vue'));
-Vue.component('header_branch_selector', require('./components/headerBranchSelector.vue'));
+Vue.component('header_branch_selector', require('./components/headerBranchSelector.vue').default);
 
 const app = new Vue({
     el: '#app'
