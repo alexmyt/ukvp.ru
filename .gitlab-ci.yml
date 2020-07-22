@@ -18,6 +18,7 @@ workflow:
 stages:
   - preparation
   - building
+  - testing
   - deploy
 
 # Variables
@@ -96,6 +97,27 @@ db_seeding:
       - db.sql
     expire_in: 1 days
     when: always
+
+testing:
+  stage: testing
+  dependencies:
+    - composer
+    - build_assets
+    - db_seeding
+  cache:
+    <<: *global_cache
+    policy: pull
+  script:
+    - php -v
+    - mysql --host="${DB_HOST}" --user="${MYSQL_USER}" --password="${MYSQL_PASSWORD}" "${MYSQL_DATABASE}" < db.sql
+    - ./vendor/phpunit/phpunit/phpunit --version
+    - php -d short_open_tag=off ./vendor/phpunit/phpunit/phpunit -v --colors=never --stderr
+  artifacts:
+    paths:
+      - ./storage/logs # for debugging
+    expire_in: 1 days
+    when: on_failure
+
 
 deploy_test:
   stage: deploy
