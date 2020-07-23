@@ -39,6 +39,7 @@ add('rsync', [
         '/node_modules/',
         '.gitlab-ci.yml',
         'deploy.php',
+        'db.sql'
     ],
 ]);
 
