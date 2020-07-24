@@ -33,7 +33,7 @@
                {{-- Урюпинск --}}
                <div class="card" id="orgBranch0" itemscope itemtype="http://schema.org/LocalBusiness" itemref="org_name">
                   <link itemprop="image" href="{{asset('images/logo.png')}}" />
-                  <link itemprop="url" href="{{env('APP_URL')}}" />
+                  <link itemprop="url" href="{{config('app.url')}}" />
                   
                   <div class="card-header" id="headingBranch0">
                      <h5 class="mb-0">
@@ -76,7 +76,7 @@
                   <meta itemprop="name" content="Отделение №1 р.п.Новониколаевский">
                   <meta itemprop="parentOrganization" itemref="orgBranch0">
                   <link itemprop="image" href="{{asset('images/logo.png')}}" />
-                  <link itemprop="url" href="{{env('APP_URL')}}" />
+                  <link itemprop="url" href="{{config('app.url')}}" />
                   
                   <div class="card-header" id="headingBranch1">
                      <h5 class="mb-0">
@@ -115,7 +115,7 @@
                   <meta itemprop="name" content="Отделение №2 ст.Нехаевская">
                   <meta itemprop="parentOrganization" itemref="orgBranch0">
                   <link itemprop="image" href="{{asset('images/logo.png')}}" />
-                  <link itemprop="url" href="{{env('APP_URL')}}" />
+                  <link itemprop="url" href="{{config('app.url')}}" />
 
                   <div class="card-header" id="headingBranch2">
                      <h5 class="mb-0">
@@ -154,7 +154,7 @@
                   <meta itemprop="name" content="Отделение №3 г.Волжский">
                   <meta itemprop="parentOrganization" itemref="orgBranch0">
                   <link itemprop="image" href="{{asset('images/logo.png')}}" />
-                  <link itemprop="url" href="{{env('APP_URL')}}" />
+                  <link itemprop="url" href="{{config('app.url')}}" />
 
                   <div class="card-header" id="headingBranch3">
                      <h5 class="mb-0">
@@ -195,7 +195,7 @@
                   <meta itemprop="name" content="Отделение №4 г.Борисоглебск">
                   <meta itemprop="parentOrganization" itemref="orgBranch0">
                   <link itemprop="image" href="{{asset('images/logo.png')}}" />
-                  <link itemprop="url" href="{{env('APP_URL')}}" />
+                  <link itemprop="url" href="{{config('app.url')}}" />
 
                   <div class="card-header" id="headingBranch4">
                      <h5 class="mb-0">
@@ -234,7 +234,7 @@
                   <meta itemprop="name" content="Отделение №5 р.п.Средняя Ахтуба">
                   <meta itemprop="parentOrganization" itemref="orgBranch0">
                   <link itemprop="image" href="{{asset('images/logo.png')}}" />
-                  <link itemprop="url" href="{{env('APP_URL')}}" />
+                  <link itemprop="url" href="{{config('app.url')}}" />
 
                   <div class="card-header" id="headingBranch5">
                      <h5 class="mb-0">
@@ -273,7 +273,7 @@
                   <meta itemprop="name" content="Отделение №6 г.Краснослободск">
                   <meta itemprop="parentOrganization" itemref="orgBranch0">
                   <link itemprop="image" href="{{asset('images/logo.png')}}" />
-                  <link itemprop="url" href="{{env('APP_URL')}}" />
+                  <link itemprop="url" href="{{config('app.url')}}" />
 
                   <div class="card-header" id="headingBranch6">
                      <h5 class="mb-0">

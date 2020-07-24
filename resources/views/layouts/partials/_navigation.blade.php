@@ -5,7 +5,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <a class="navbar-brand" href="{{env('APP_URL')}}" id="org_url">
+      <a class="navbar-brand" href="{{config('app.url')}}" id="org_url">
          <img id="header-logotype" src="{{asset('images/logo.png')}}" class="mr-2" alt="Кредитный потребительский кооператив &quot;Касса взаимопомощи&quot;">
          <div class="d-none d-md-flex flex-column">
             <span id="brand-opf">Кредитный потребительский кооператив</span>

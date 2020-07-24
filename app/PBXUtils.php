@@ -56,7 +56,7 @@ class PBXUtils{
       $originateMsg->setPriority('1');
       $originateMsg->setExtension($cbRequest->client_phone_number);
       $originateMsg->setVariable('manager',$this->callback_manager);
-      $originateMsg->setVariable('siteURL',env('APP_URL'));
+      $originateMsg->setVariable('siteURL',config('app.url'));
       $originateMsg->setVariable('requestID',$cbRequest->id);
       $originateMsg->setTimeout(30000);
       $originateMsg->setAsync(true);
