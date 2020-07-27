@@ -50,6 +50,12 @@ task('deploy:secrets', function () {
     upload('.env', get('deploy_path') . '/shared');
 });
 
+// Sitemap generate
+// @see: https://packagist.org/packages/spatie/laravel-sitemap
+task('artisan:sitemap:generate', function () {
+    run('{{bin/php}} {{release_path}}/artisan sitemap:generate');
+});
+
 // Hosts
 localhost()
     ->set('deploy_path', '/var/www/ukvp.ru')
