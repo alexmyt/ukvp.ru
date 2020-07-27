@@ -7,7 +7,12 @@ if(!defined('SCRIPT_ROOT')) {
 }
 
 // Получим XML со свежим списком экстремистов
-$xml_fname = SCRIPT_ROOT.'terrorists/terrorists.xml';
+$xml_dir = SCRIPT_ROOT.'storage/terrorists/';
+$xml_fname = $xml_dir.'terrorists.xml';
+
+if(!is_dir($xml_dir)){
+	if(!mkdir($xml_dir)) return false;
+}
 
 if(is_writable($xml_fname) && $xml_doc = simplexml_load_file($xml_fname)){
 	$doc_date = DateTime::createFromFormat('d.m.y', $xml_doc['crDate']);
@@ -27,7 +32,7 @@ if(!$xml_doc) return false;
 
 if ($_GET['what']=='list') {
 	// перечень имеющихся файлов с версиями списков
-	$flist = glob(SCRIPT_ROOT.'terrorists/*');
+	$flist = glob(SCRIPT_ROOT.'storage/terrorists/*');
 	$xml_flist = new SimpleXMLElement("<?xml version='1.0'  encoding='windows-1251' standalone='yes'?><list></list>");
 	foreach($flist as $fname){
 		if(basename($fname)=='terrorists.xml') continue;
@@ -60,20 +65,20 @@ if ($_GET['what']=='list') {
 
 	$content = $xml_flist->asXML();
 	header("Content-type: text/xml");
-	header("Content-length: "+ strlen($content));
+	header("Content-length: " . strval(strlen($content)));
 	echo $content;
 
 }elseif (($_GET['what']=='md5')) {
 	// md5 текущего файла с перечнем
 	$content = 	md5($xml_doc->list->asXML());
 	header("Content-type: text/plain");
-	header("Content-length: "+ strlen($content));
+	header("Content-length: " . strval(strlen($content)));
 	echo $content;
 
 }else{
 	$content = $xml_doc->asXML();
 	header("Content-type: text/xml");
-	header("Content-length: "+ strlen($content));
+	header("Content-length: " . strval(strlen($content)));
 	echo $content;
 	//echo($xml_doc->asXML());
 }
@@ -102,7 +107,7 @@ function create_xml($fname){
 
 		$xml_doc = new SimpleXMLElement($xmlstr);
 
-		require_once './nokogiri/nokogiri.php';
+		require_once SCRIPT_ROOT.'nokogiri/nokogiri.php';
 		$saw = new nokogiri($html);
 
 		$matches=array();
@@ -113,7 +118,7 @@ function create_xml($fname){
 			$terrorist=$xml_doc->list->addChild('terrorist');
 			$terrorist->addChild('Number',$matches[1]);
 			$terrorist->addChild('FIO',$matches[2]);
-			$terrorist->addChild('Birthday',$matches[3]);
+			$terrorist->addChild('Birthday',(count($matches)>3) ? $matches[3] : "");
 			if(preg_match('/\d\d\.\d\d\.\d\d\d\d.+,\s(.+);$/',$fl['#text'][0],$matches)){
 				$terrorist->addChild('Address',$matches[1]);
 			}else{
@@ -130,7 +135,7 @@ function create_xml($fname){
 		
 		// если еще нет файла с версией этого списка - создадим
 		$md5 = md5($xml_doc->list->asXML());
-		$md5_fname = SCRIPT_ROOT.'terrorists/'.$md5;
+		$md5_fname = SCRIPT_ROOT.'storage/terrorists/'.$md5;
 		if(!file_exists($md5_fname)){
 			$handle = fopen($md5_fname,'w+');
 			fwrite($handle,$xml_doc->asXML());
