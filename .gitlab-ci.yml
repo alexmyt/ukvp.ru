@@ -128,7 +128,7 @@ deploy_test:
     url: https://dev.ukvp.ru
   tags: 
     - dev
-    - vds5
+    - vds8
     - shell
   dependencies:
     - composer
