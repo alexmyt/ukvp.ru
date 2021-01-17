@@ -126,6 +126,16 @@
       </div>
    </div>
 </section>
+<section class="info-bar info-bar-clean py-2">
+   <div class="container">
+      <div class="row text-center">
+         <div class="col-12">
+            <p>С 01.01.21 для пайщиков кооператива обязательна досудебная процедура урегулирования споров по имущественным требованиям  к кооперативу на сумму до 500.000 руб. Она осуществляется посредством обращения к финансовому уполномоченному по тел. 8-800-200-00-10, почтовый адрес 119017, г. Москва, Старомонетный переулок, дом 3, получатель АНО «СОДФУ», официальный сайт <a href="https://finombudsman.ru/">finombudsman.ru</a>. <a href="{{ asset('storage/finombudsman.pdf') }}">Подробнее</a></p>
+         </div>
+      </div>
+   </div>
+</section>
+
 <div class="border-bottom py-2">
    <div class="container">
       <div class="row">
