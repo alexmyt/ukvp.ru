@@ -175,12 +175,9 @@
             <div class="card">
                <div class="card-header text-uppercase">Новости</div>
                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-uppercase"><a href="{{route('news',17)}}">Общее собрание членов кооператива в форме собрания уполномоченных <br><span class="small text-muted">17.05.2021</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',16)}}">График работы в майские праздники <br><span class="small text-muted">29.04.2021</span></a></li>
                   <li class="list-group-item text-uppercase"><a href="{{route('news',15)}}">График работы в новогодние каникулы <br><span class="small text-muted">31.12.2020</span></a></li>
-                  <li class="list-group-item text-uppercase"><a href="{{route('news',14)}}">Общее собрание членов кооператива в форме собрания уполномоченных <br><span class="small text-muted">29.05.2020</span></a></li>
-                  <li class="list-group-item text-uppercase"><a href="{{route('news',13)}}">График работы в майские праздники <br><span class="small text-muted">30.04.2020</span></a></li>
-                  <li class="list-group-item text-uppercase"><a href="{{route('news',11)}}">Офисы КПК возобновляют работу с клиентами <span class="text-danger">в ограниченном режиме</span> <br><span class="small text-muted">20.04.2020</span></a></li>
-                  <li class="list-group-item text-uppercase"><a href="{{route('news',10)}}">Работа КПК в период мероприятий, связанных с COVID-19 <br><span class="small text-muted">27.03.2020</span></a></li>
                </ul>
             </div>
                
