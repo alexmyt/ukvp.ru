@@ -26,7 +26,7 @@
          <ul class="navbar-nav justify-content-center w-100">
             <li class="nav-item"><a class="nav-link" href="/shareholders">Пайщику</a></li>
             <li class="nav-item"><a class="nav-link" href="/loans">Займы</a></li>
-            {{--<li class="nav-item"><a class="nav-link" href="/deposits">Сбережения</a></li>--}}
+            <li class="nav-item"><a class="nav-link" href="/deposits">Сбережения</a></li>
             <li class="nav-item"><a class="nav-link" href="/docs">Документы</a></li>
             <li class="nav-item"><a class="nav-link" href="/contacts">Контакты</a></li>
          </ul>
