@@ -17,7 +17,7 @@ $docs=array(
 <article>
   <div class="container">
     @foreach($docs as $doc)
-    <p><i class="far fa-file"></i> <a href="{{ asset('storage/kid/'.$doc['file']) }}">{{$doc['name']}}</a></p>
+    <p><i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/'.$doc['file']) }}">{{$doc['name']}}</a></p>
     @endforeach
  </div>
 </article>
