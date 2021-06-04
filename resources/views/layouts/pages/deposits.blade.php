@@ -20,7 +20,7 @@ $docs=array(
 
     <h5 class="py-3">Условия хранения личных сбережений пайщиков КПК-КВП</h5>
 
-    <table class="table table-bordered table-responsive-md">
+    <table class="table table-bordered table-responsive-md table-hover">
 			<thead class="thead-light">
 				<tr>
 					<th scope="row" class="text-nowrap">Вид взноса</th>
@@ -36,7 +36,7 @@ $docs=array(
 					<td class="text-center">3670 дней</td>
 					<td class="text-center">0.1%</td>
 					<td class="text-center">от 100 руб.</td>
-					<td><i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_on_demand.pdf') }}">Скачать</a></td>
+					<td> class="text-center"<i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_on_demand.pdf') }}">Скачать</a></td>
 				</tr>
 				<tr>
 					<th scope="row">Текущий<br>(снятие, пополнение, ежемесячная капитализация)</th>
@@ -77,10 +77,6 @@ $docs=array(
 
     <p>Все проценты годовые. В течение срока договора проценты по нему не меняются.</p>
     <p>Уточняйте информацию в офисах кооператива и по контактным телефонам, указанным на сайте. Кооператив вправе по решению правления приостановить или прекратить прием сбережений при отсутствии необходимости в привлеченных средствах.</p>
-    
-    @foreach($docs as $doc)
-    <p><i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/'.$doc['file']) }}">{{$doc['name']}}</a></p>
-    @endforeach
  </div>
 </article>
 @endsection
