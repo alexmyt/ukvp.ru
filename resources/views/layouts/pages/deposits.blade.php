@@ -36,7 +36,7 @@ $docs=array(
 					<td class="text-center">3670 дней</td>
 					<td class="text-center">0.1%</td>
 					<td class="text-center">от 100 руб.</td>
-					<td> class="text-center"<i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_on_demand.pdf') }}">Скачать</a></td>
+					<td class="text-center"><i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_on_demand.pdf') }}">Скачать</a></td>
 				</tr>
 				<tr>
 					<th scope="row">Текущий<br>(снятие, пополнение, ежемесячная капитализация)</th>
