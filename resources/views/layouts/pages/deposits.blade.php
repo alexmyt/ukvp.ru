@@ -16,16 +16,17 @@ $docs=array(
 @section('content')
 @include('layouts.partials._header',['pageHeader'=>'Сберегательные взносы'])
 <article>
-  <h5 class="py-3">Условия хранения личных сбережений пайщиков КПК-КВП</h5>
   <div class="container">
 
-		<table class="table table-bordered table-responsive">
+    <h5 class="py-3">Условия хранения личных сбережений пайщиков КПК-КВП</h5>
+
+    <table class="table table-bordered table-responsive">
 			<thead>
 				<tr>
 					<th class="text-nowrap">Вид взноса</th>
 					<th class="text-nowrap">Срок</th>
 					<th class="text-nowrap">Ставка, % год.</th>
-					<th>Сумма взноса</th>
+					<th class="text-nowrap">Сумма взноса</th>
 					<th><abbr title="Ключевой информационный документ - документ с условиями договора в формате, разработанном ЦБ РФ">КИД</abbr></th>
 				</tr>
 			</thead>
@@ -42,26 +43,32 @@ $docs=array(
 					<td class="text-center">1095 дней</td>
 					<td class="text-center">2%</td>
 					<td class="text-center">от 1 000 руб.</td>
-					<td><i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_current.pdf') }}">Скачать</a></td>
+					<td class="text-center"><i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_current.pdf') }}">Скачать</a></td>
 				</tr>
 				<tr>
 					<th>Срочный<br>(без снятия, без пополнения, без капитализации)</th>
-					<td class="text-center">365 дней<br>
+					<td class="text-center">
+            365 дней<br>
             548 дней<br>
             730 дней<br>
             1095 дней<br>
-            1460 дней<br></td>
-					<td class="text-center">3.5%<br>
+            1460 дней
+          </td>
+					<td class="text-center">
+            3.5%<br>
             4%<br>
             4.5%<br>
             5%<br>
-            5.5%<br></td>
+            5.5%
+          </td>
 					<td class="text-center">от 50 000 руб.</td>
-					<td><i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_fixed_365_days.pdf') }}">Скачать</a><br>
+					<td class="text-center">
+            <i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_fixed_365_days.pdf') }}">Скачать</a><br>
             <i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_fixed_548_days.pdf') }}">Скачать</a><br>
             <i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_fixed_730_days.pdf') }}">Скачать</a><br>
             <i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_fixed_1095_days.pdf') }}">Скачать</a><br>
-            <i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_fixed_1460_days.pdf') }}">Скачать</a><br></td>
+            <i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_fixed_1460_days.pdf') }}">Скачать</a>
+          </td>
 				</tr>
 			</tbody>
 		</table>
