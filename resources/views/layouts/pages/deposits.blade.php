@@ -20,56 +20,58 @@ $docs=array(
 
     <h5 class="py-3">Условия хранения личных сбережений пайщиков КПК-КВП</h5>
 
-    <table class="table table-bordered table-responsive">
-			<thead>
+    <table class="table table-bordered table-responsive-md">
+			<thead class="thead-light">
 				<tr>
-					<th class="text-nowrap">Вид взноса</th>
-					<th class="text-nowrap">Срок</th>
-					<th class="text-nowrap">Ставка, % год.</th>
-					<th class="text-nowrap">Сумма взноса</th>
-					<th><abbr title="Ключевой информационный документ - документ с условиями договора в формате, разработанном ЦБ РФ">КИД</abbr></th>
+					<th scope="row" class="text-nowrap">Вид взноса</th>
+					<th scope="row" class="text-nowrap">Срок</th>
+					<th scope="row" class="text-nowrap">Ставка</th>
+					<th scope="row" class="text-nowrap">Сумма взноса</th>
+					<th scope="row"><abbr title="Ключевой информационный документ - документ с условиями договора в формате, разработанном ЦБ РФ">КИД</abbr></th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<th>До востребования<br>(снятие, пополнение, без капитализации)</th>
+					<th scope="row">До востребования<br>(снятие, пополнение, без капитализации)</th>
 					<td class="text-center">3670 дней</td>
 					<td class="text-center">0.1%</td>
 					<td class="text-center">от 100 руб.</td>
 					<td><i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_on_demand.pdf') }}">Скачать</a></td>
 				</tr>
 				<tr>
-					<th>Текущий<br>(снятие, пополнение, ежемесячная капитализация)</th>
+					<th scope="row">Текущий<br>(снятие, пополнение, ежемесячная капитализация)</th>
 					<td class="text-center">1095 дней</td>
 					<td class="text-center">2%</td>
 					<td class="text-center">от 1 000 руб.</td>
 					<td class="text-center"><i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_current.pdf') }}">Скачать</a></td>
 				</tr>
 				<tr>
-					<th>Срочный<br>(без снятия, без пополнения, без капитализации)</th>
-					<td class="text-center">
-            365 дней<br>
-            548 дней<br>
-            730 дней<br>
-            1095 дней<br>
-            1460 дней
-          </td>
-					<td class="text-center">
-            3.5%<br>
-            4%<br>
-            4.5%<br>
-            5%<br>
-            5.5%
-          </td>
-					<td class="text-center">от 50 000 руб.</td>
-					<td class="text-center">
-            <i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_fixed_365_days.pdf') }}">Скачать</a><br>
-            <i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_fixed_548_days.pdf') }}">Скачать</a><br>
-            <i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_fixed_730_days.pdf') }}">Скачать</a><br>
-            <i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_fixed_1095_days.pdf') }}">Скачать</a><br>
-            <i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_fixed_1460_days.pdf') }}">Скачать</a>
-          </td>
+					<th scope="row" rowspan="5">Срочный<br>(без снятия, без пополнения, без капитализации)</th>
+					<td class="text-center">365 дней</td>
+					<td class="text-center">3.5%</td>
+					<td class="text-center" rowspan="5">от 50 000 руб.</td>
+					<td class="text-center"><i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_fixed_365_days.pdf') }}">Скачать</a></td>
 				</tr>
+				<tr>
+					<td class="text-center">548 дней</td>
+					<td class="text-center">4%</td>
+					<td class="text-center"><i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_fixed_548_days.pdf') }}">Скачать</a></td>
+				</tr>
+        <tr>
+          <td class="text-center">730 дней</td>
+          <td class="text-center">4.5%</td>
+          <td class="text-center"><i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_fixed_730_days.pdf') }}">Скачать</a></td>
+        </tr>
+        <tr>
+          <td class="text-center">1095 дней</td>
+          <td class="text-center">5%</td>
+          <td class="text-center"><i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_fixed_1095_days.pdf') }}">Скачать</a></td>
+        </tr>
+        <tr>
+          <td class="text-center">1460 дней</td>
+          <td class="text-center">5.5%</td>
+          <td class="text-center"><i class="far fa-file-pdf"></i> <a href="{{ asset('storage/kid/KID_fixed_1460_days.pdf') }}">Скачать</a></td>
+        </tr>
 			</tbody>
 		</table>
 
