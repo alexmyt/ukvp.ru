@@ -81,7 +81,7 @@
       <h2>Раскрытие информации</h2>
       <p>Кооператив по заявлению пайщика предоставляет ему для ознакомления: <a href="{{ asset('storage/organisation_chart.pdf') }}">Устав</a>,
          <a href="{{ asset('storage/membership_clause.pdf') }}">Положение о членстве</a>,
-         <a href="{{ asset('storage/regulation_of managements.pdf') }}">Положение об органах</a>,
+         <a href="{{ asset('storage/regulation_of_managements.pdf') }}">Положение об органах</a>,
          <a href="{{ asset('storage/cond_raising_funds.pdf') }}">Положение о порядке и условиях привлечения денежных средств пайщиков</a>,
          <a href="{{ asset('storage/regulation_granting_loans.pdf') }}">Положение о порядке предоставления займов пайщикам</a>,
          <a href="{{ asset('storage/regulation_of_property.pdf') }}">Положение о порядке формирования и использования имущества</a> и
